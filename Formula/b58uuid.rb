@@ -7,7 +7,7 @@ class B58uuid < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/b58uuid/b58uuid-cli/releases/download/v1.0.0/b58uuid-darwin-arm64.tar.gz"
-      sha256 "bf1abd627ac8b7d476060b912c44c44cb4d670c372c9a4c340ba249b902e6710"
+      sha256 "adb9c287ae67e6daa90eb524b3c556d16a42d95259d62e2604411f0b26edb7f3"
     else
       url "https://github.com/b58uuid/b58uuid-cli/releases/download/v1.0.0/b58uuid-darwin-amd64.tar.gz"
       sha256 "REPLACE_WITH_ACTUAL_SHA256_AMD64"
