@@ -7,16 +7,16 @@ class B58uuid < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/b58uuid/b58uuid-cli/releases/download/v1.0.0/b58uuid-darwin-arm64.tar.gz"
-      sha256 "adb9c287ae67e6daa90eb524b3c556d16a42d95259d62e2604411f0b26edb7f3"
+      sha256 "748c6a565e6af30433a4b12343c24da0c8dedb0e3cdb7fa8d06d30935ac1ed8c"
     else
       url "https://github.com/b58uuid/b58uuid-cli/releases/download/v1.0.0/b58uuid-darwin-amd64.tar.gz"
-      sha256 "REPLACE_WITH_ACTUAL_SHA256_AMD64"
+      sha256 "8b8926b196638c84dd858274a5816aa2ffab18c29f366ed98a5f77aa0c7d262f"
     end
   end
 
   on_linux do
     url "https://github.com/b58uuid/b58uuid-cli/releases/download/v1.0.0/b58uuid-linux-amd64.tar.gz"
-    sha256 "REPLACE_WITH_ACTUAL_SHA256_LINUX"
+    sha256 "faa7ae876b83b2179e3b6b80ed1cac0db82efeca14a727aabd7d382aecba4a35"
   end
 
   def install
