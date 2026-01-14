@@ -1,22 +1,22 @@
 class B58uuid < Formula
   desc "Compact Base58 UUID Encoder CLI"
   homepage "https://b58uuid.io"
-  version "1.0.1"
+  version "1.0.0"
   license "MIT"
   
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/b58uuid/b58uuid-cli/releases/download/v1.0.1/b58uuid-darwin-arm64.tar.gz"
-      sha256 "3a80589bfeecaf5d7aaa633726af6209dffebad49979dd8a99d3467405e0b65e"
+      url "https://github.com/b58uuid/b58uuid-cli/releases/download/v1.0.0/b58uuid-darwin-arm64.tar.gz"
+      sha256 "e326ce8569ccac2e31013cb973823085db1887a192049478d4b50b2ed9d3b938"
     else
-      url "https://github.com/b58uuid/b58uuid-cli/releases/download/v1.0.1/b58uuid-darwin-amd64.tar.gz"
-      sha256 "665970fe0b1e757ecc514ed13d6fab4fcb5b03b1f16655b43464ec09844087bd"
+      url "https://github.com/b58uuid/b58uuid-cli/releases/download/v1.0.0/b58uuid-darwin-amd64.tar.gz"
+      sha256 "bcaf39e6543a4743a91198ce2a111c6c84686bfefcc133073613d686c2cd07b3"
     end
   end
 
   on_linux do
-    url "https://github.com/b58uuid/b58uuid-cli/releases/download/v1.0.1/b58uuid-linux-amd64.tar.gz"
-    sha256 "3ca3d8774ec055e02f3c94137d51da73c59c3ad48ba1924e43f09eedd0ae119d"
+    url "https://github.com/b58uuid/b58uuid-cli/releases/download/v1.0.0/b58uuid-linux-amd64.tar.gz"
+    sha256 "3d9d3c4e8ec3c12f5a1740987a0aec6f055b1e80ff0e8c01c1d6a5b6804f1258"
   end
 
   def install
@@ -25,7 +25,7 @@ class B58uuid < Formula
 
   test do
     system "#{bin}/b58uuid", "--version"
-    assert_match "b58uuid 1.0.1", shell_output("#{bin}/b58uuid --version")
+    assert_match "b58uuid 1.0.0", shell_output("#{bin}/b58uuid --version")
     
     # Test encode
     output = shell_output("#{bin}/b58uuid encode 550e8400-e29b-41d4-a716-446655440000")
